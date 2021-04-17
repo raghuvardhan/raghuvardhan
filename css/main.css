@@ -1,0 +1,329 @@
+body {
+    background-color: #F5F5F5;
+    margin: auto;
+    width: auto;
+ }
+
+nav ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding-top: 70px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 2px;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+    margin: auto;
+    display: block;
+}
+
+
+.pages {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.projects{
+    margin: 2em;
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.description: hover{
+    color: grey;
+}
+
+.projectTitle{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.logo{
+    width: 2em;
+    height: 2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding: 10px;
+  width: auto;
+}
+
+.grid-container: hover{
+  opacity: 0.3;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin: 12px;
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin: 12px;
+}
+
+.grid-container-skills {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 10px;
+  width: auto;
+}
+
+.grid-item-skills {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin: 12px;
+}
+
+.site-footer {
+    padding: 2rem 0px 0px 0px;
+    text-align: center;
+    background: #292c33;
+    color: #bec6d5;
+    height: 100%;
+}
+
+.site-footer p{
+  width: 500px;
+  margin: 0 auto 0px;
+  color: #bec6d5;
+}
+
+.footer-text{
+  font-size: 1.2rem;
+  color: #bec6d5;
+}
+
+.fa{
+  size: 1.5rem;
+  margin-top: 3rem;
+  color: white;
+}
+
+.site-footer a{
+  text-decoration: none;
+  padding: 8px;
+  color: white;
+}
+
+.site-footer h3{
+  color: white;
+  font-size: 1.8rem;
+}
+
+.footer-bottom{
+  margin: 2rem 0px 0px 0px;
+  text-align: center;
+  color: #bec6d5;
+}
+
+header{
+  height: 100vh;
+}
+
+.header-background{
+  background: url(/assets/images/header_background.jpg);
+  background-size: cover;
+  background-position:center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.div-title{
+  font-size: 2rem;
+  font-style: bold;
+}
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.project{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+  background: linear-gradient(to right bottom, #9e66c6, #6027e1);
+  border-radius: 0;
+  flex-direction: column;
+  flex: 0 0 auto;
+  font-size: 14px;
+  height: 464px;
+  overflow: hidden;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 350px;
+  z-index: 1000;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1200;
+  background-color: black;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.scroll-down{
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+}
