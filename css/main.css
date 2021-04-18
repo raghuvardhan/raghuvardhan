@@ -33,15 +33,6 @@ ul.posts li {
     list-style: none;
 }
 
-.avatar {
-    border-radius: 50%;
-    height: 25%;
-    width: 25%;
-    margin: auto;
-    display: block;
-}
-
-
 .pages {
     text-decoration: none;
     font-size: 22px;
@@ -57,7 +48,7 @@ ul.posts li {
     text-align: center;
 }
 
-.description: hover{
+.description :hover{
     color: grey;
 }
 
@@ -79,7 +70,7 @@ ul.posts li {
   width: auto;
 }
 
-.grid-container: hover{
+.grid-container :hover{
   opacity: 0.3;
 }
 
@@ -122,7 +113,6 @@ ul.posts li {
     text-align: center;
     background: #292c33;
     color: #bec6d5;
-    height: 100%;
 }
 
 .site-footer p{
@@ -154,7 +144,7 @@ ul.posts li {
 }
 
 .footer-bottom{
-  margin: 2rem 0px 0px 0px;
+  margin: 2em 0px 0px 0px;
   text-align: center;
   color: #bec6d5;
 }
@@ -236,13 +226,6 @@ ul.posts li {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 .project{
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
   background: linear-gradient(to right bottom, #9e66c6, #6027e1);
