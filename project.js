@@ -1,8 +1,7 @@
 class project {
-    constructor(title,description, technology, gitLink){
+    constructor(title,description, gitLink){
         this.title = title;
         this.description = description;
-        this.technology = technology;
         this.gitLink = gitLink;
     }
 }

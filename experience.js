@@ -9,3 +9,5 @@ class experience{
         this.profile = profile;
     }
 }
+
+export {experience}

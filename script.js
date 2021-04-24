@@ -1,23 +1,16 @@
 import {project} from './project.js'
-
-const MNews = new project("MNews", 
-                        "The Website about local news. Enter the place of your choice and it will provide with you the local news of that region.",
-                        ["HTML","CSS","JS"]);
-const Attendance = new project("Attendance",
-                             "Shows the number of classes you need to attend or bunk",
-							 ["Java", "Android Studio"]);
-const FileSystems = new project("File Systems",
-								"Project which simulates a new file system on the machine",
-								["C++"]);
+import {experience} from './experience.js'
 
 
-const projects  = [MNews, Attendance, FileSystems];
+const skills = ["C#", "Ado .Net", "SQL Server","Html", "Angular", "Git", ".Net", "Asp .Net", "MVC", "Agile", "Jira"];
+const ul = document.createElement("ul");
 
-const projectTemplates = projects.map((project) => {
-    var projectDiv = document.createElement("div");
-    projectDiv.classList.add("project", "mySlides");
-});
+for(const skill of skills){
+	let list = document.createElement("li");
+	list.innerText = skill;
+	ul.appendChild(list);
 
+}
 
 const bizview = new experience("Accolite Digital",
 							"Senior Software Engineer",
@@ -48,31 +41,60 @@ const Sqldm = new experience("Accolite Digital",
 							]);
 
 const experiences = [bizview, Sqldm];
-
-document.querySelector(".prev")
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-showSlides(slideIndex += n);
+const expDiv = document.querySelector(".experience")
+for(const exp of experiences){
+	var div = document.createElement("div");
+	div.classList.add("card");
+	var title = document.createElement("h5");
+	title.innerText = exp.title + " ( " + exp.startDate + " - " + exp.toDate + " )";
+	div.appendChild(title);
+	var company = document.createElement("p");
+	company.classList.add("company");
+	company.innerText = exp.company;
+	div.appendChild(company);
+	var description = document.createElement("p");
+	description.innerText = exp.profile;
+	div.appendChild(description); 
+	expDiv.appendChild(div);
 }
 
-function currentSlide(n) {
-showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("project");
-var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}    
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";  
-}
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";  
-dots[slideIndex-1].className += " active";
-}
+
+const skillDiv = document.querySelector(".skills");
+skillDiv.appendChild(ul);
+const mNews = new project("MNews", 
+                        "The Website about local news. Enter the place of your choice and it will provide with you the local news of that region.",
+						"https://github.com/raghuvardhan/MNews");
+const attendance = new project("Attendance",
+                             "Shows the number of classes you need to attend or bunk",
+							 "https://github.com/raghuvardhan/Attendance");
+const fileSystems = new project("File Systems",
+								"Project which simulates a new file system on the machine",
+								"https://github.com/raghuvardhan/File-Systems");
+const todoList = new project("Todo List",
+							"The Application for daily planner",
+							"https://github.com/raghuvardhan/To-Do-List");
+
+const projects  = [mNews, attendance, fileSystems, todoList];
+
+const projectsDiv = document.querySelector(".projects");
+for(const project of projects){
+    var projectDiv = document.createElement("div");
+    projectDiv.classList.add("project");
+
+	var title = document.createElement("h3");
+	title.innerText = project.title;
+	projectDiv.appendChild(title);
+
+	var description = document.createElement("p");
+	description.innerText = project.description;
+	projectDiv.appendChild(description);
+
+	var gitLink = document.createElement("a");
+	gitLink.setAttribute("href", project.gitLink);
+	gitLink.innerText = "Code";
+	projectDiv.appendChild(gitLink);
+
+	projectsDiv.appendChild(projectDiv);
+};
+
