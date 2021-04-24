@@ -1,5 +1,5 @@
-import {project} from './project.js'
-import {experience} from './experience.js'
+import {project} from './project.js';
+import {experience} from './experience.js';
 
 
 const skills = ["C#", "Ado .Net", "SQL Server","Html", "Angular", "Git", ".Net", "Asp .Net", "MVC", "Agile", "Jira"];

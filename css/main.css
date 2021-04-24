@@ -1,3 +1,49 @@
+body{
+  background-color: lightgray;
+}
+
+
+header{
+  border: 1px solid darkgrey;
+  background-color: darkgrey;
+}
+
+header>img{
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  display: block;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    background-color: darkgrey;
+}
+
+ul{ 
+    margin: 20px auto 40px; 
+}
+
+.project{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 33.3%;
+    margin: 10px;
+}
+
+.projects{
+  display: flex;
+}
+
+.card{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 12px;
+  background-color: transparent;
+}
+
+
+
 article{
   margin: 10px;
 }
@@ -58,36 +104,3 @@ button{
 button:hover{
   background-color: rgb(60, 151, 142)
 }
-
-header{
-  border: 1px solid darkgrey;
-  background-color: darkgrey;
-}
-
-header>img{
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-footer {
-    border-top: 1px solid #d5d5d5;
-}
-
-ul{ 
-    margin: 20px auto 40px; 
-}
-
-.project{
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    width: 33.3%;
-    margin: 10px;
-}
-
-.card{
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  margin: 12px;
-}
-
