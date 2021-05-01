@@ -48,13 +48,18 @@ for(const exp of experiences){
 	var title = document.createElement("h5");
 	title.innerText = exp.title + " ( " + exp.startDate + " - " + exp.toDate + " )";
 	div.appendChild(title);
-	var company = document.createElement("p");
+	var company = document.createElement("h5");
 	company.classList.add("company");
 	company.innerText = exp.company;
 	div.appendChild(company);
-	var description = document.createElement("p");
-	description.innerText = exp.profile;
-	div.appendChild(description); 
+	
+	var profileList = document.createElement("ul");
+	for(const item of exp.profile){
+		var listItem = document.createElement("li");
+		listItem.innerText = item;
+		profileList.appendChild(listItem);
+	}
+	div.appendChild(profileList); 
 	expDiv.appendChild(div);
 }
 
@@ -84,17 +89,25 @@ for(const project of projects){
 
 	var title = document.createElement("h3");
 	title.innerText = project.title;
+	title.classList.add("title");
 	projectDiv.appendChild(title);
+
+	var projectDetails = document.createElement("div");
+	projectDetails.classList.add("projectDetails");
 
 	var description = document.createElement("p");
 	description.innerText = project.description;
-	projectDiv.appendChild(description);
+	description.classList.add("description");
+	projectDetails.appendChild(description);
 
 	var gitLink = document.createElement("a");
 	gitLink.setAttribute("href", project.gitLink);
+	gitLink.classList.add("code");
 	gitLink.innerText = "Code";
-	projectDiv.appendChild(gitLink);
+	projectDetails.appendChild(gitLink);
 
+	projectDiv.appendChild(projectDetails);
+;
 	projectsDiv.appendChild(projectDiv);
 };
 

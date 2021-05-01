@@ -1,59 +1,23 @@
 body{
-  background-color: lightgray;
+  background-color: #153956;
+  color: #f5f2e8;
 }
-
 
 header{
-  border: 1px solid darkgrey;
-  background-color: darkgrey;
-}
-
-header>img{
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  display: block;
-}
-
-footer {
-    border-top: 1px solid #d5d5d5;
-    background-color: darkgrey;
-}
-
-ul{ 
-    margin: 20px auto 40px; 
-}
-
-.project{
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    width: 33.3%;
-    margin: 10px;
-}
-
-.projects{
-  display: flex;
-}
-
-.card{
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  margin: 12px;
-  background-color: transparent;
-}
-
-
-
-article{
-  margin: 10px;
-}
-
-p {
-    margin: 2px;
-}
-
-.intro{
   text-align: center;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+img{
+  border-radius: 50%;
+  width: 50%;
+  margin-top: 10%;
+}
+
+.introduction{
+  margin: 10%;
 }
 
 .mouse{
@@ -83,7 +47,6 @@ p {
   width: 3px;
 }
 
-
 .arrow-down{
   display:block;
   margin-left: auto;
@@ -97,10 +60,64 @@ p {
   -ms-transform: rotate(45deg);
 }
 
-button{
-  background-color: transparent ;
+.title{
+  margin: 1%;
 }
 
-button:hover{
-  background-color: rgb(60, 151, 142)
+p{
+  text-align: center;
+}
+
+button{
+  margin: 10px;
+  height: 40px;
+  width: 25%;
+  background-color: orangered;
+}
+
+.skills{ 
+    margin: 20px auto 40px; 
+}
+
+.project{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+
+.projects{
+  text-align: center;
+}
+
+.card{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 12px;
+  background-color: transparent;
+}
+
+.contact{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-input{
+  display: block;
+  height: 40px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+article{
+  margin: 10px;
+}
+
+p {
+    margin: 2px;
+}
+
+
+footer {
+  border-top: 1px solid transparent;
+  background-color: #002e4d;
 }

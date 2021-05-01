@@ -7,12 +7,19 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
 <body>
-  <header class="intro">
-    <h2 class="title">Full Stack Developer</h2>
-    <h3>I love coding my favourite things</h3>
-    <img src="./assets/images/My dev profile photo.jpg" height="250px" width="50%"/>
-    
-    <a href="#content">
+  <header>
+    <section class="avatar">
+      <img src="./assets/images/My dev profile photo.jpg" height="250px" width="50%"/>
+      </section>
+    <section class="introduction">
+      <h2 class="title">Full Stack Developer</h2>
+      <h3>I love coding my favourite things</h3>
+      <p>
+        I am a passionate software developer looking for new challenges in my career with 2.6 years of experience in .Net development. I have worked in various roles in the process of Software development including Technical Support, Project Estimation, Feature development as well as the maintenance of the product.
+      </p>
+    </section>
+  </header>
+  <a href="#content">
     <div class="scroll">
       <div class="mouse">
           <div class="wheel"></div>
@@ -22,37 +29,22 @@
     </div>
     </a>
 
-  </header>
-
   <section id="content">
-    <article>
-      I am a passionate software developer looking for new challenges in my career with 2.6 years of experience in .Net development. I have worked in various roles in the process of Software development including Technical Support, Project Estimation, Feature development as well as the maintenance of the product.
-    </article>
     <article class="skills">
-      <h3>Skills</h3>
+      <h3 class="title">Skills</h3>
     </article>
     <div class="experience">
-      <h3>Experience</h3>
+      <h3 class="title">Experience</h3>
     </div>
     <div > 
-      <h3>Featured Projects</h1>
+      <h3 class="title">Featured Projects</h1>
         <div class="projects">
-          
         </div>
   </div>
 </section>
 
-
-<br>
-
 <footer >
 <div >
-  <h3>
-    Raghuvardhan Karanam
-  </h3>
-  <p>
-    Android developer, Occassional blogger and problem solver.  I love reading novels, listening music, and watching cricket.
-  </p>
   <p>Say hello at<span>
   <a href="mailto:karanamraghuvardhan12@gmail.com" target="_blank">karanamraghuvardhan@gmail.com</a></span>
   <p>You can view my blogs at<span><a href="https://raghuvardhank.blogspot.com/" target="_blank">e-blogger</a></span>
@@ -67,6 +59,15 @@
         <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
       </a>
   </div>
+  <div class="contact">
+    <h3>Send a message</h3>
+    <form>
+    <input class="form-input" type="text" placeholder="Name">
+    <input class="form-input" type="email" placeholder="Email-Id">
+    <textarea class="form-input" name="message" placeholder="Enter message"></textarea>
+    <button type="submit">Send</button>
+    </div>
+  </div>
   <div class="footer-bottom">
   <p>
     Made by Raghuvardhan Karanam.
@@ -74,7 +75,6 @@
   </div>
 </div>
 </footer>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script type="module"  src="script.js"></script>
 </body>
 </html>
