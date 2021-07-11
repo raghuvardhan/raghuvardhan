@@ -1,6 +1,6 @@
 body{
-  background-color: #153956;
-  color: #f5f2e8;
+  background-color: white;
+  color: black;
 }
 
 header{
@@ -62,10 +62,6 @@ img{
 
 .title{
   margin: 1%;
-}
-
-p{
-  text-align: center;
 }
 
 button{
