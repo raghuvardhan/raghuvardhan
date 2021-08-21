@@ -1,87 +1,136 @@
 body{
-  background-color: white;
-  color: black;
+  background-color: #121212;
+  color: white;
 }
 
 header{
   text-align: center;
-  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  color: white;
+}
+
+nav{
+  height:8%;
+  width:100%;
+  position:fixed;
+  top:0px;
+  background:black;
+}
+
+nav li {
+  list-style: none;
+  float: right;
+  margin-left:10px;
 }
 
 img{
   border-radius: 50%;
   width: 50%;
-  margin-top: 10%;
-}
-
-.introduction{
   margin: 10%;
+  margin-left: 40%;
 }
 
-.mouse{
+#introduction{
   display: block;
-  margin-left:auto;
-  margin-right: auto;
-  height: 40px;
-  width: 20px;
-  border: 2px solid white;
-  border-radius: 10px;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.scroll{
-  margin-top: 30px;
-  margin-bottom: 10px;
+
+#skills{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, 200px);
 }
 
-.wheel{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 2px;
-  height: 10px;
-  width: 3px;
+
+.skill{
+  list-style:none;
+  padding:5px;
+  border: 1px solid black;
+  height:100px;
+  border-radius:10px;
+  margin:5px;
+  text-align:center;
+  vertical-align: middle;
+  background-color: #068686;
 }
 
-.arrow-down{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  border-right:2px solid white;
-  border-bottom:2px solid white;
-  width:15px;
-  height:15px;
-  transform:rotate(40);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+
+.experience{
+  border: 1px solid black;
+  border-radius: 26px;
+  margin:10px;
+  background:#ad8c20;
 }
 
-.title{
-  margin: 1%;
+#blogs{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-button{
+.blog{
+  border: 1px solid rgba(0, 0, 0, 0.8);
   margin: 10px;
-  height: 40px;
-  width: 25%;
-  background-color: orangered;
+  border-radius: 26px;
+  background-color: #6767b6;
 }
 
-.skills{ 
-    margin: 20px auto 40px; 
+.blog-descr{
+  height: 120px;
+  margin: 10px;
+}
+
+.blog-title{
+  text-align: center;
+  margin-top:10px;
+  height:40px;
+}
+
+.view{
+  display: block;
+  text-align:center;
+  width: 100%;
+  padding-bottom:10px;
+  padding-top: 10px;
+  background:#8D2663;
+  border-bottom-left-radius:26px;
+  border-bottom-right-radius:26px;
+}
+
+#projects{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project{
   border: 1px solid rgba(0, 0, 0, 0.8);
   margin: 10px;
+  border-radius: 26px;
+  background-color: #6767b6;
 }
 
-.projects{
+
+.project-title{
   text-align: center;
+  margin-top:10px;
+}
+
+.project-descr{
+  height: 120px;
+  margin: 10px;
+}
+
+.code{
+  display: block;
+  text-align:center;
+  width: 100%;
+  padding-bottom:10px;
+  padding-top: 10px;
+  background:#8D2663;
+  border-bottom-left-radius:26px;
+  border-bottom-right-radius:26px;
 }
 
 .card{
@@ -112,8 +161,30 @@ p {
     margin: 2px;
 }
 
-
 footer {
   border-top: 1px solid transparent;
   background-color: #002e4d;
+  color: white;
+}
+
+#submit{
+  margin: 10px;
+  height: 40px;
+  width: 25%;
+  background-color: orangered;
+}
+
+
+footer{
+  background:black;
+}
+
+input{
+  height:20px;
+  border-radius:1px;
+  width: 100%;
+}
+
+.form-group{
+  margin:10px;
 }

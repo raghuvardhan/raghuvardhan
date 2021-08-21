@@ -8,53 +8,116 @@
   </head>
 <body>
   <header>
-    <section class="avatar">
-      <img src="./assets/images/My dev profile photo.jpg" height="250px" width="50%"/>
-      </section>
-    <section class="introduction">
-      <h2>Hello</h2>
-      <h3>I am Raghu</h3>
-      <h4>I am full stack developer and love to develop websites.</h4>
-      
+    <nav>
+      <ul>
+        <li><a href="#profile" class="nav-link">Profile</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+      </ul>
+    </nav>
+      <img src="./assets/images/My dev profile photo.jpg" alt="profile picture" height="250px" width="50%"/>
+    <section id="introduction">
+      <h1>Raghu Karanam</h1>
+      <p>I am a full stack developer</p>
     </section>
   </header>
-  <a href="#content">
-    <div class="scroll">
-      <div class="mouse">
-          <div class="wheel"></div>
-      </div>
-      <div class="arrow-down"></div>
-      <div class="arrow-down"></div>
-    </div>
-    </a>
-
-  <section id="content">
-    <article>
-      <h3 class="title">Professional Summary</h3>
-      <ul>
-        <li>
-          <p>I am a passionate software developer with 3.5 years of experience in software development.
-          </p>
-        </li>
-        <li>
-          <p>
-            I have worked in various roles in the process of Software development including Technical Support, Project Estimation, Feature development as well as the maintenance of the product.
-          </p>
-        </li>
+  <main>
+    <h3 class="section-title">Skills</h3>
+    <section>
+      <ul id="skills">
+        <li class="skill">C#</li>
+        <li class="skill">.Net</li>
+        <li class="skill">SQL</li>
+        <li class="skill">Angular</li>
+        <li class="skill">HTML5</li>
+        <li class="skill">CSS</li>
       </ul>
-    </article>
-    <article class="skills">
-      <h3 class="title">Skills</h3>
-    </article>
-    <article class="experience">
-      <h3 class="title">Experience</h3>
-    </article>
-    <article > 
-      <h3 class="title">Featured Projects</h1>
-        <div class="projects">
+    </section>
+    <!-- <section id="experiences">
+      <div class="experience">
+      <h2>Senior Software Engineer</h2>
+      <h3>Accolite Digital Pvt ltd</h3>
+      <ul>
+        <li>Bizview is one of the leading systems for planning, reporting, analytics and dashboard
+</li>
+        <li>Worked on integrating third party tools like Infor into the product
+</li>
+        <li>Migrated the product from Silverlight technology to HTML5 in phased manner using a sprint based development process.
+</li>
+        <li>Worked with the project managers and product owners for the gathering of requirements and estimating the project work
+</li>
+        <li>Assisted and guided junior team members and shared my experience and knowledge on the product through various KT sessions.</li>
+      </ul>
+      </div>
+      <div class="experience">
+        <h2>Software Engineer</h2>
+        <h3>Accolite Digital Pvt ltd</h3>
+        <ul>
+          <li>IDERA SQL Diagnostic Manager is a powerful performance monitoring and diagnostics solution that proactively alerts administrators to health, performance, or availability problems within their SQL Server environment
+</li>
+          <li>Worked with project managers, developers and customers to resolve technical issues for Enterprise level SQL Products
+</li>
+          <li>Implemented report generation feature from SQL Server in a desktop application using C# and .net Framework
+</li>
+          <li>Implemented and improved user interface in Java based web portal and sites for continuous improvement
+</li>
+          <li>Worked in Sprint based Maintenance Project to resolve multiple issues and fixed bugs on SQLdm Product.
+</li>
+          <li>Worked on improving the performance of the SQLdm product and implemented various new features in SQLdm
+</li>
+          <li>Assisted and guided team members and shared my experience and knowledge on the product through various KT sessions.</li>
+        </ul>
+      </div>
+    </section> -->
+    
+    <h3 class="section-title">Blogs</h3>
+    <section id="blogs">
+      <div class="blog">
+        <h2 class="blog-title">Data sharing between Angular Components</h2>
+        <p class="blog-descr"></p>
+        <a href="#" class="view">View</a>
+      </div>
+      <div class="blog">
+        <h2 class="blog-title">Promise vs Observable</h2>
+        <p class="blog-descr"></p>
+        <a href="#" class="view">View</a>
+      </div>
+      <div class="blog">
+        <h2 class="blog-title">Tap, Map and SwitchMap</h2>
+        <p class="blog-descr"></p>
+        <a href="#" class="view">View</a>
+      </div>
+      <div class="blog">
+        <h2 class="blog-title">Dependency Injection in Angular</h2>
+        <p class="blog-descr"></p>
+        <a href="#" class="view">View</a>
+      </div>
+    </section>
+    <h3 class="section-title">Projects</h3>
+    <section id="projects">
+      <div class="project">
+        <h2 class="project-title">MNews</h2>
+        <p class="project-descr">The Website about local news. Enter the place of your choice and it will provide with you the local news of that region.</p>
+        <a href="#" class="code">Code</a>
+      </div>
+      <div class="project">
+        <h2 class="project-title">Attendance</h2>
+        <p class="project-descr">Shows the number of classes you need to attend or bunk</p>
+        <a href="#" class="code">Code</a>
         </div>
-      </article>
-</section>
+      <div class="project">
+        <h2 class="project-title">File Systems</h2>
+        <p class="project-descr">Project which simulates a new file system on the machine</p>
+        <a href="#" class="code">Code</a>
+      </div>
+      <div class="project">
+        <h2 class="project-title">Todo</h2>
+        <p class="project-descr">The Application for daily planner</p>
+        <a href="#" class="code">Code</a>
+      </div>
+    </section>
+  </main>
 
 <footer >
 <div >
@@ -63,23 +126,23 @@
   <p>You can view my blogs at<span><a href="https://raghuvardhank.blogspot.com/" target="_blank">e-blogger</a></span>
   <div>
       <a href="https://twitter.com/urstruly_raghu" target="_blank">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        Twitter
       </a>
       <a href="https://github.com/raghuvardhan" target="_blank">
-        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        Github
       </a>
       <a href="https://www.linkedin.com/in/karanam-raghuvardhan-1ab936b6/" target="_blank">
-        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        Linkedin
       </a>
   </div>
-  <div class="contact">
+  <section class="contact">
     <h3>Send a message</h3>
     <form>
     <input class="form-input" type="text" placeholder="Name">
     <input class="form-input" type="email" placeholder="Email-Id">
     <textarea class="form-input" name="message" placeholder="Enter message"></textarea>
-    <button type="submit">Send</button>
-    </div>
+    <input type="submit" id="submit">
+    </section>
   </div>
   <div class="footer-bottom">
   <p>
@@ -91,5 +154,3 @@
 <script type="module"  src="script.js"></script>
 </body>
 </html>
-
-   

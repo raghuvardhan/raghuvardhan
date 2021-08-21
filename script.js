@@ -8,7 +8,7 @@ const ul = document.createElement("ul");
 for(const skill of skills){
 	let list = document.createElement("li");
 	list.innerText = skill;
-	ul.appendChild(list);lkhj
+	ul.appendChild(list);
 
 }
 
