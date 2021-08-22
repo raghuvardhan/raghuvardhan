@@ -24,7 +24,7 @@ nav li {
   margin-left:10px;
 }
 
-img{
+#profile{
   border-radius: 50%;
   width: 50%;
   margin: 10%;
@@ -65,39 +65,35 @@ img{
   background:#ad8c20;
 }
 
-#blogs{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .blog{
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 80% 20%;
+  border: 1px solid rgba(214, 206, 206, 0.8);
   margin: 10px;
   border-radius: 26px;
-  background-color: #6767b6;
+  width: 75%;
+  height: 150px;;
 }
 
 .blog-descr{
-  height: 80px;
   margin: 10px;
-  margin-top: 40px;
 }
 
 .blog-title{
   text-align: center;
   margin-top:10px;
-  height:40px;
+  width: 100%;
 }
 
 .view{
   display: block;
-  text-align:center;
-  width: 100%;
   padding-bottom:10px;
   padding-top: 10px;
-  background:#8D2663;
-  border-bottom-left-radius:26px;
-  border-bottom-right-radius:26px;
+}
+
+.blog-img{
+  height:150px;
+  width: 50%;
 }
 
 #projects{
