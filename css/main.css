@@ -65,9 +65,11 @@ section{
 }
 
 .blog{
+  border: 1px solid rgba(214, 206, 206, 0.8);
+  border-radius: 26px;  
   margin: 10px;
   width: 75%;
-  height: 150px;;
+  height: 250px;
 }
 
 .blog-descr{
@@ -81,10 +83,9 @@ section{
 }
 
 .blog-img{
-  border: 1px solid rgba(214, 206, 206, 0.8);
-  border-radius: 26px;
+  border-radius: 26px;  
   height:150px;
-  width: 50%;
+  width: 100%;
 }
 
 .contact{
