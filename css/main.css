@@ -1,13 +1,12 @@
 body{
-  background-color: #121212;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 header{
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  color: white;
 }
 
 nav{
@@ -31,9 +30,7 @@ a {
 
 #profile{
   border-radius: 50%;
-  width: 50%;
   margin: 10%;
-  margin-left: 40%;
 }
 
 #introduction{
@@ -64,12 +61,23 @@ section{
   background-color: #068686;
 }
 
+#blogs{
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap:3%;
+}
+
 .blog{
   border: 1px solid rgba(214, 206, 206, 0.8);
   border-radius: 26px;  
   margin: 10px;
-  width: 75%;
-  height: 250px;
+  height: 350px;
+}
+
+.blog-img{
+  border-radius: 26px;  
+  height:60%;
+  width: 100%;
 }
 
 .blog-descr{
@@ -80,12 +88,6 @@ section{
   margin-top:10px;
   width: 100%;
   font-size: 1.5em;;
-}
-
-.blog-img{
-  border-radius: 26px;  
-  height:150px;
-  width: 100%;
 }
 
 .contact{
